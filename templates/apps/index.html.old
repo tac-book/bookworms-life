@@ -25,7 +25,6 @@
   <label for="tab2_3">2014</label>
   <input type="radio" name="cp_tab" id="tab2_4" aria-controls="force_tab02">
   <label for="tab2_4">2015</label>
-
   <div class="cp_tabpanels">
     <div class="cp_tabpanel">
       <h2>2012</h2>
@@ -36,6 +35,49 @@
       </div>
       <div class="cp_tabpanel">
       <h2>2013</h2>
+      </div>
+      <div class="cp_tabpanel">
+      <h2>2014</h2>
+      </div>
+      <div class="cp_tabpanel">
+      <h2>2015</h2>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="tabs">
+  <input id="rank2012" type="radio" name="tab_item" checked>
+  <label class="tab_item" for="rank2012">2012</label>
+  <input id="rank2013" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2013">2013</label>
+  <input id="rank2014" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2014">2014</label>
+  <input id="rank2015" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2015">2015</label>
+  <input id="rank2016" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2016">2016</label>
+  <input id="rank2017" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2017">2017</label>
+  <input id="rank2018" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2018">2018</label>
+  <input id="rank2019" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2019">2019</label>
+  <input id="rank2020" type="radio" name="tab_item">
+  <label class="tab_item" for="rank2020">2020</label>
+
+
+  <div class="tab_content" id="rank2012_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">TBD</p>
+    </div>
+  </div>
+  <div class="tab_content" id="rank2013_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">
+	<ul class="ul_test1">
+        <h2>108</h2>
 	<li><a href="https://www.amazon.co.jp/一億総ツッコミ時代-星海社新書-槙田-雄司/dp/4061385267">一億総ツッコミ社会</a></li>
 	<li><a href="./blank.html">アズミ・ハルコは行方不明</a></li>
 	<li><a href="./blank.html">らんる曳く</a></li>
@@ -46,12 +88,18 @@
 	<li><a href="./blank.html">新宿スペースインベーダー</a></li>
 	<li><a href="./blank.html">ギャルと不思議ちゃん論</a></li>
 	<li><a href="./blank.html">ノベライズ・テレビジョン</a></li>
-      </div>
-      <div class="cp_tabpanel">
-      <h2>2014</h2>
-      </div>
-      <div class="cp_tabpanel">
-      <h2>2015</h2>
+	</ul>
+	<ul class="ul_test1">
+        <h2>TAC</h2>
+	<li><a href="./blank.html">AAA</a></li>
+	</ul>
+      </p>
+    </div>
+  </div>
+  <div class="tab_content" id="rank2014_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">TBD</p>
     </div>
   </div>
 </div>
+
