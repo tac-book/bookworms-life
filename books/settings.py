@@ -25,7 +25,7 @@ SECRET_KEY = 'tdu#qtq8bx^smn8at^6btbaw=sd8!wv25m@ldjy6c7a%7euwpq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["bookwarms-life.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "bookwarms-life.herokuapp.com"]
 
 
 # Application definition
@@ -140,5 +140,6 @@ except ImportError:
     pass
 
 if not DEBUG:
+    SECRET_KEY = os.environ['SECRET_KEY']
     import django_heroku
     django_heroku.settings(locals())
