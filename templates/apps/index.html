@@ -11,9 +11,11 @@
   src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript"
   src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-<script type="text/javascript"
-  src="{% static 'js/apps.js' %}"></script>
-<link href="{% static 'css/apps.css' %}" rel="stylesheet">
+<!--
+<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'js/apps.js' %}"></script>
+--!>
+<script src="{% static 'css/apps.css' %}"></script>
 <script>
   $( function() {
 
@@ -24,8 +26,49 @@
         .children("ul > li")
           .removeClass("ui-corner-top")
           .addClass("ui-corner-left");
+
+    // horizontal
+    $("#tabs-sub").tabs();
   });
 </script>
+
+<style type="text/css">
+  #sampleTabs {
+      width: 50em;
+      font-size: 12px;
+  }
+  .ui-tabs-vertical {
+      width: 55em;
+  }
+  .ui-tabs-vertical > .ui-tabs-nav {
+      padding: .2em .1em .2em .2em;
+      float: left; width: 12em;
+  }
+  .ui-tabs-vertical > .ui-tabs-nav > li {
+      clear: left; width: 100%;
+      border-bottom-width: 1px !important;
+      border-right-width: 0 !important;
+      margin: 0 -1px 0.2em 0;
+  }
+  .ui-tabs-vertical > .ui-tabs-nav > li > a {
+      display:block;
+      width: 10em;
+  }
+  .ui-tabs-vertical > .ui-tabs-nav > li.ui-tabs-active {
+      padding-bottom: 0;
+      padding-right: .1em;
+      border-right-width: 1px;
+      border-right-width: 1px;
+  }
+  .ui-tabs-vertical > .ui-tabs-panel {
+      padding: 1em;
+      float: right;
+      width: 35em;
+  }
+  .ui-tabs.ui-tabs-vertical > .ui-tabs-nav > li.ui-tabs-active {
+      margin-bottom: 0.2em;
+  }
+  </style>
 
 </head>
 <body>
