@@ -2,92 +2,263 @@
 {% bootstrap_css %}
 {% bootstrap_javascript jquery='full' %}
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset='utf-8' />
-<link type="text/css" rel="stylesheet"
-  href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
-<script type="text/javascript"
-  src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script type="text/javascript"
-  src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-<!--
-<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
-<script src="{% static 'js/apps.js' %}"></script>
---!>
-<script src="{% static 'css/apps.css' %}"></script>
-<script>
-  $( function() {
+<html lang="ja">
+<meta name="viewport" content="width=device-width>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOOKWARM'S LIFE</title>
+    <link href="{% static 'css/apps.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <script type="text/javascript" src="{% static 'js/apps.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
+<h1>BOOKWARM'S LIFE</h1>
 
-    // vertical
-    $("#tabs")
-        .tabs()
-        .addClass("ui-tabs-vertical ui-helper-clearfix")
-        .children("ul > li")
-          .removeClass("ui-corner-top")
-          .addClass("ui-corner-left");
+<div class="cp_tab">
+  <input type="radio" name="cp_tab" id="tab2_1" aria-controls="first_tab02" checked>
+  <label for="tab2_1">2012</label>
+  <input type="radio" name="cp_tab" id="tab2_2" aria-controls="second_tab02">
+  <label for="tab2_2">2013</label>
+  <input type="radio" name="cp_tab" id="tab2_3" aria-controls="third_tab02">
+  <label for="tab2_3">2014</label>
+  <input type="radio" name="cp_tab" id="tab2_4" aria-controls="force_tab02">
+  <label for="tab2_4">2015</label>
+  <input type="radio" name="cp_tab" id="tab2_5" aria-controls="fifth_tab02">
+  <label for="tab2_5">2016</label>
+  <input type="radio" name="cp_tab" id="tab2_6" aria-controls="sixth_tab02">
+  <label for="tab2_6">2017</label>
+  <input type="radio" name="cp_tab" id="tab2_7" aria-controls="seventh_tab02">
+  <label for="tab2_7">2018</label>
+  <input type="radio" name="cp_tab" id="tab2_8" aria-controls="eighth_tab02">
+  <label for="tab2_8">2019</label>
+  <input type="radio" name="cp_tab" id="tab2_9" aria-controls="nineth_tab02">
+  <label for="tab2_9">2020</label>
 
-    // horizontal
-    $("#tabs-sub").tabs();
-  });
-</script>
-
-<style type="text/css">
-  #sampleTabs {
-      width: 50em;
-      font-size: 12px;
-  }
-  .ui-tabs-vertical {
-      width: 55em;
-  }
-  .ui-tabs-vertical > .ui-tabs-nav {
-      padding: .2em .1em .2em .2em;
-      float: left; width: 12em;
-  }
-  .ui-tabs-vertical > .ui-tabs-nav > li {
-      clear: left; width: 100%;
-      border-bottom-width: 1px !important;
-      border-right-width: 0 !important;
-      margin: 0 -1px 0.2em 0;
-  }
-  .ui-tabs-vertical > .ui-tabs-nav > li > a {
-      display:block;
-      width: 10em;
-  }
-  .ui-tabs-vertical > .ui-tabs-nav > li.ui-tabs-active {
-      padding-bottom: 0;
-      padding-right: .1em;
-      border-right-width: 1px;
-      border-right-width: 1px;
-  }
-  .ui-tabs-vertical > .ui-tabs-panel {
-      padding: 1em;
-      float: right;
-      width: 35em;
-  }
-  .ui-tabs.ui-tabs-vertical > .ui-tabs-nav > li.ui-tabs-active {
-      margin-bottom: 0.2em;
-  }
-  </style>
-
-</head>
-<body>
-  <div id="tabs">
-    <ul>
-      <li><a href="#tabs-1">2012</a></li>
-      <li><a href="#tabs-2">2013</a></li>
-      <li><a href="#tabs-3">2014</a></li>
-    </ul>
-    <div id="tabs-1">
-      <p>text only</p>
+  <div class="cp_tabpanels">
+    <div class="cp_tabpanel">
+      <h2>2012</h2>
+      <h3>108</h3>
+        <ol>
+          <li>ここは退屈迎えに来て / 山内マリコ</li>
+          <li>千年の祈り / イーユンリー</li>
+          <li>サンカーラ / 田口ランディ</li>
+        </ol>
+      <h3>TAC</h3>
+        <ol>
+          <li>何もかも憂鬱な夜に / 中村文則</li>
+          <li>64 / 横山秀夫</li>
+          <li>絶望の国の幸福な若者たち / 古市憲寿</li>
+        </ol>
     </div>
-    <div id="tabs-2">
-      <p>text only</p>
+    <div class="cp_tabpanel">
+      <h2>2013</h2>
+      <h3>108</h3>
+        <ol>
+	  <li>一億総ツッコミ社会 / 槙田雄司</li>
+	  <li>アズミ・ハルコは行方不明 / 山内マリコ</a></li>
+	  <li>らんる曳く / 佐々木中</li>
+	  <li>ワールズ・エンド・ガーデン / いとうせいこう</li>
+	  <li>歩くような速さで / 是枝裕和</li>
+	  <li>復讐 / タナダユキ</li>
+	  <li>幻年時代 / 坂口恭平</li>
+	  <li>新宿スペースインベーダー / 玉袋筋太郎</li>
+	  <li>ギャルと不思議ちゃん論 / 松谷創一郎</li>
+	  <li>ノベライズ・テレビジョン / 天久聖一</li>
+        </ol>
+      <h3>TAC</h3>
+        <ol>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/05/06/134953">想像ラジオ</a> / いとうせいこう</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/05/13/001118">あの人は蜘蛛を潰せない</a> / 彩瀬まる</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/09/17/222607">シャッター商店街と線量計</a> / 大友良英</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/08/07/221427">フェルマーの最終定理</a> / サイモン・シン</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/05/06/133645">ウエストウイング</a> / 津村記久子</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/07/26/235814">明日死ぬかもしれない自分、そしてあなたたち</a> / 山田詠美</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/06/15/100319">少女は卒業しない</a> / 朝井リョウ</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/12/11/224101">あなたの彼女だって、むかしはヒョードルだのミルコだの言っていた筈だ</a> / 菊地成孔</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/12/23/224736">骨を彩る</a> / 彩瀬まる</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2013/09/08/104246">ハンサラン　愛する人びと</a> / 深沢潮</li>
+        </ol>
     </div>
-    <div id="tabs-3">
-      <p>panel 3</p>
+    <div class="cp_tabpanel">
+      <h2>2014</h2>
+        <h3>108</h3>
+          <ol>
+            <li>HHhH / ローラン・ピネ</li>
+            <li>街の人生 / 岸政彦</li>
+            <li>人間は料理をする / マイケル・ポーラン</li>
+            <li>映画術 / </li>
+            <li>熱狂なきファシズム / 想田和弘</li>
+            <li>短夜明かし / 佐々木中</li>
+            <li>南島小説二題 / いとうせいこう</li>
+            <li>マイ・リトル・世田谷 / しまおまほ</li>
+            <li>だから日本はズレている / 古市憲寿</li>
+            <li>一瞬の光 / 白石一文</li>
+          </ol>
+        <h3>TAC</h3>
+          <ol>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/03/01/000552">動的平衡</a> / 福岡伸一</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/09/28/153430">最後の家族</a> / 村上龍</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/12/13/102414">サラバ！</a> / 西加奈子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/09/23/214829">エブリシング・フロウズ</a> / 津村記久子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/12/01/131000">ぼくには数字が風景に見える</a> / ダニエル・タメット</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/02/15/135615">それから</a> / 夏目漱石</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/08/04/215618">ジョゼと虎と魚たち</a> / 田辺聖子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/03/28/232356">完全なる証明</a> / マーシャ・ガッセン</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/06/05/231751">僕らのご飯は明日で待ってる</a> / 瀬尾まいこ</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2014/10/31/193546">問いのない答え</a> / 長嶋有</li>
+          </ol>
+
+    </div>
+    <div class="cp_tabpanel">
+      <h2>2015</h2>
+      <h3>108</h3>
+          <ol>
+            <li>紋切型社会――言葉で固まる現代を解きほぐす / 武田砂鉄</li>
+            <li>火花 / 又吉直樹</li>
+            <li>永い言い訳 / 西川美和</li>
+            <li>ぼくらの民主主義なんだぜ / 高橋源一郎</li>
+            <li>ディズニープリンセスと幸せの法則 / 荻上チキ</li>
+            <li>保育園義務教育化 / 古市憲寿</li>
+            <li>アゲインスト・リテラシー グラフィティ文化論 / 大山エンリコイサム</li>
+            <li>偽詩人の世にも奇妙な栄光 / 四元康祐</li>
+            <li>ストーナー / ジョン・ウィリアムズ</li>
+            <li>ひめゆりの塔をめぐる人々の手記 / 中宗根政善</li>
+          </ol>
+      <h3>TAC</h3>
+          <ol>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/03/14/100938">木村政彦はなぜ力道山を殺さなかったのか</a> / 増田俊也</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/11/01/124043">かくかくしかじか</a> / 東村アキコ</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/07/30/210701">断片的なものの社会学</a> / 岸政彦</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/04/26/124803">恋するソマリア</a> / 高野秀行</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/11/11/224858">謝るなら、いつでもおいで</a> / 川名壮志</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/07/22/063703">愛に乱暴</a> / 吉田修一</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/06/13/195901">かわいそうだね？</a> / 綿矢りさ</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/10/15/064551">乱暴と待機</a> / 本谷有希子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/05/21/213928">火花</a> / 又吉直樹</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2015/02/08/122054">遮光</a> / 中村文則</li>
+          </ol>
+    </div>
+    <div class="cp_tabpanel">
+      <h2>2016</h2>
+      <h3>108</h3>
+          <ol>
+            <li>あの素晴らしき七年 / エトガル・ケレット</li>
+            <li>誰が音楽をタダにした？巨大産業をぶっ潰した男たち / スティーブン・ウィット</li>
+            <li>かなわない / 植本一子</li>
+            <li>見えない音、聴こえない絵 / 大竹伸郎</li>
+            <li>八本脚の蝶 / 二階堂奥歯</li>
+            <li>あなたを選んでくれるもの / ミランダ・ジュライ</li>
+            <li>沈黙 / 遠藤周作</li>
+            <li>七帝柔道記 / 増田俊也</li>
+            <li>私の消滅 / 中村文則</li>
+            <li>コンビニ人間 / 村田沙耶香</li>
+          </ol>
+      <h3>TAC</h3>
+          <ol>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/02/12/124553">きみは赤ちゃん</a> / 川上未映子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/09/09/190814">七帝柔道記</a> / 増田俊也</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/06/17/061741">悪と仮面のルール</a> / 中村文則</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/12/14/064329">i（アイ）</a> / 西加奈子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/09/05/070841">コンビニ人間</a> / 村田沙耶香</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/02/10/185802">献灯使</a> / 多和田葉子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/02/17/202136">死んでいない者</a> / 滝口悠生</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/05/11/205121">甘美なる作戦</a> / イアン・マキューアン</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/11/17/200051">浮遊霊ブラジル</a> / 津村記久子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2016/05/03/222711">いま、地方で生きるということ</a> / 西村佳哲</li>
+          </ol>
+    </div>
+    <div class="cp_tabpanel">
+      <h2>2017</h2>
+      <h3>108</h3>
+          <ol>
+            <li>ゼロヴィル / スティーブ・エリクソン</li>
+            <li>往復書簡　初恋と不倫 / 坂元裕二</li>
+            <li>降伏の記録 / 植本一子</li>
+            <li>ミズーラ / ジョン・クラカワー</li>
+            <li>茄子の輝き / 滝口悠生</li>
+            <li>ビニール傘 / 岸政彦</li>
+            <li>劇場 / 又吉直樹</li>
+            <li>ヤバい社会学　一日だけのギャングリーダー / スディール・ヴェンカテッシュ</li>
+            <li>プリズン・ブック・クラブ / アン・ウォームズリー</li>
+            <li>塔と重力 / 上田岳弘</li>
+          </ol>
+      <h3>TAC</h3>
+          <ol>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/11/10/195558">降伏の記録</a> / 植本一子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/08/17/095029">MCバトル史から読み解く 日本語ラップ入門</a> / ダースレイダー</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/09/29/222429">家族最後の日</a> / 植本一子</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/07/07/212425">ダイオウイカは知らないでしょう</a> / 西加奈子, せきしろ</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/04/13/081317">ビニール傘</a> / 岸政彦</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/10/03/200551">ホームシック:生活（2〜3人分）</a> / ECD</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/01/13/073117">あの素晴らしき七年</a> / エトガル・ケレット</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/04/05/183914">小さないじわるを消すだけで</a> / 吉本ばなな</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/05/26/213819">スウィングしなけりゃ意味がない</a> / 佐藤亜紀</li>
+            <li><a href="https://tacbook.hatenablog.com/entry/2017/10/28/204236">夜を乗り越える</a> / 又吉直樹</li>
+          </ol>
+    </div>
+    <div class="cp_tabpanel">
+      <h2>2018</h2>
+      <h3>108</h3>
+        <ol>
+          <li>オープンシティ / テジュ・コール</li>
+          <li>おとしもの</li>
+          <li>はじめての沖縄 / 岸 政彦</li>
+          <li>ブッチャーズ・クロッシング / ジョン・ウィリアムズ</li>
+          <li>ビリーリンの永遠の一日 / ベン・ファウンテン</li>
+          <li>テロ / フェルディナント・フォン・シーラッハ</li>
+          <li>ミライミライ / 古川 日出男</li>
+          <li>1984年 / ジョージ・オーウェル</li>
+          <li>声を出して笑っていただきたい本 / 西森 洋一</li>
+          <li>ユニクロ潜入1年 / 横田 増生</li>
+        </ol>
+      <h3>TAC</h3>
+        <ol>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/03/31/200826">アウシュビッツの図書係</a> / アントニオ G イトゥルベ</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/04/30/235256">殺人犯はそこにいる</a> / 清水 潔</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/07/11/191657">べつの言葉で</a> / ジュンパラヒリ</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/01/29/201249">すべての雑貨</a> / 三品 輝起</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/01/19/235330">罪の声</a> / 塩田 武士</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/02/02/063508">菜食主義者</a> / ハン・ガン</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/12/02/135503">ある奴隷少女に起こった出来事</a> / ハリエット・アン・ジェイコブズ</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/05/14/185147">失点イン・ザ・パーク</a> / ECD</li>
+          <li>芸人前夜 / 中田 敦彦</li>
+          <li><a href="http://tacbook.hatenablog.com/entry/2018/11/10/230557">NO PLACE TO HIDE </a> / グレン・グリーンウォルド</li>
+        </ol>
+    </div>
+    <div class="cp_tabpanel">
+      <h2>2019</h2>
+          <a href="https://podcasts.apple.com/jp/podcast/29-2019-book-ranking-tacbonald/id1450080184?i=1000461023352">Podcast</a>
+      <h3>108</h3>
+        <ol>
+          <li>息吹 / テッド・チャン</li>
+          <li>台風一過 / 植本一子</li>
+          <li>三体 / 劉慈欣</li>
+          <li>人間 / 又吉直樹</li>
+          <li>ハーモニー / 伊藤計劃</li>
+          <li>フィフティ・ピープル / チョン・セラン</li>
+          <li>火星の人 / アンディ・ウィアー</li>
+          <li>cook / 坂口恭平</li>
+          <li>遠きにありて / 西川美和</li>
+          <li>夫婦生活 / 町田康</li>
+        </ol>
+      <h3>TAC</h3>
+        <ol>
+          <li>わたしのいるところ / ジュンパ・ラヒリ</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2019/02/15/002511">HHhH</a> / ローラン・ビネ</li>
+          <li>しろいろの街の、その骨の体温の / 村田沙耶香</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2019/05/22/190637">A</a> / 森達也</li>
+          <li>どうしても生きてる/ 朝井リョウ</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2019/02/28/225952">ものすごくうるさくて、ありえないほど近い</a> / ジョナサン・サフラン・フォア</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2019/01/05/001547">宇宙創成</a> / サイモン・シン</li>
+          <li>僕の人生には事件が起きない / 岩井勇気</li>
+          <li>Rの異常な愛情 / R指定</li>
+          <li><a href="https://tacbook.hatenablog.com/entry/2019/06/28/080245">その女アレックス</a> / ピエール・ルメートル</li>
+        </ol>
     </div>
   </div>
+</div>
 
-</body>
-</html>
