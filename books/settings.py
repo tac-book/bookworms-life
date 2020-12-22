@@ -25,7 +25,7 @@ SECRET_KEY = 'tdu#qtq8bx^smn8at^6btbaw=sd8!wv25m@ldjy6c7a%7euwpq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "bookwarms-life.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "bookworms-life.herokuapp.com"]
 
 
 # Application definition
